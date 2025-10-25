@@ -1,0 +1,11 @@
+{
+  "name": "Bapli EDI Web UI",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
+  "forwardPorts": [5173, 3000],
+  "postCreateCommand": "bash -lc 'cd server && npm install && cd ../web && npm install'",
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+    }
+  }
+}
